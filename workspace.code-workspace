@@ -2,6 +2,15 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\Week_19\\01_Conditionals"
+		},
+		{
+			"path": "..\\..\\..\\Week_19\\02_theme_changer"
+		},
+		{
+			"path": "..\\..\\..\\Week_19\\03_todo_app"
 		}
 	]
 }
