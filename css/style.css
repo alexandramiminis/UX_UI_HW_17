@@ -97,7 +97,6 @@ color: #000000;
   justify-content:center;
   align-items: center;
   margin-top: 20px;
-  outline: 10px solid red;
   }
   .flexlink {
     display:inline-flex;
@@ -145,8 +144,6 @@ color: #000000;
    justify-content: center;
    align-items: center;
    margin-top: 125px;
-   outline: 10px solid red;
-   
   }
   .workintro {
     display:flex;
@@ -160,6 +157,11 @@ color: #000000;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  #arrowbutton {
+  margin-top: 10px;
+  padding-top: 10px;
   }
   
   h3 {
@@ -219,8 +221,8 @@ color: #000000;
     grid-column-end: line2;
     grid-row-start: line5;
     grid-row-end: line5;
-    justify-self: center;
-    align-self: center;
+    margin-top: 50px;
+    margin-left: 175px;
 
    }
 
@@ -231,6 +233,7 @@ color: #000000;
     grid-row-end: line5;
     justify-self: center;
     align-self: center;
+    margin-left: 130px;
    }
 
    .itemtext {
@@ -266,11 +269,24 @@ color: #000000;
 .footer {
   float:bottom;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 195px;
   padding: 0px;
   margin: 0px;
   background: #C4C4C4;
 }
+
+.inline-block2 {
+  display: inline-block;
+  margin: 25px;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 53px;
+}
+
 .copyright {
   position: absolute;
   font-family: Roboto Mono;
@@ -279,20 +295,18 @@ color: #000000;
   font-size: 16px;
   line-height: 21px;
   text-align: left;
+  margin-bottom: 50px;
   
   color: #000000;
 }
 @media only screen and (max-width: 600){
-.skillsection {
-flex-direction: column;
-}
-.workintro {
-flex-direction: column;
-}
 .workGrid {
   display: grid;
-  align-content: space-evenly;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr [line6] 1fr;
 } 
+body {
+display: flex;
+flex-direction: column;
+}
 }
